@@ -18,7 +18,20 @@ h2{
 h3{
   font-weight: 400; 
 }
-
+.title{
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.title__main{
+  font-size: 32px;
+}
+.title__text{
+  font-size: 20px;
+  width: 780px;
+  margin: 0 auto;
+  
+}
 /*HEADER*/
 .header{
   background-color: #fcdb00;
@@ -69,4 +82,17 @@ h3{
 .ipad{
   display: block;
   margin: 60px auto 0;
+}
+
+/*FEATURES*/
+.feature{
+  margin-bottom: 65px;
+}
+.feature__icon{
+  font-size: 50px;
+  margin-right: 37px;
+  color: #000000;
+}
+.feature__text{
+  color: #898989;
 }
