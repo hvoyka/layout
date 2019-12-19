@@ -28,12 +28,15 @@ body{
 .header{
     font-family: 'Roboto', sans-serif;
 }
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .header__top{
     background-color: #303030;
 }
 .header__btn{
     position: relative;
-    float: right;
     line-height: 36px;    
     color: #1b1b1b;
     background-color: #ffc222;
@@ -46,11 +49,6 @@ body{
     position: absolute;
     left: 22px;
     color: #1b1b1b;
-}
-.header__top:after{
-    content: "";
-    clear: both;
-    display: block;
 }
 .header__email, .header__phone{
     color: #cbcacb;
