@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,7 +19,7 @@
       <div class="container">
         <a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
         <a class="header__email" href="#">layout585@gmail.com</a>
-        <a class="header__btn" href="#">Бесплатная консультация</a>
+        <a class="header__btn" data-fancybox data-src="#modal" href="javascript:;">Бесплатная консультация</a>
       </div>
     </div>
     <div class="header__content">
@@ -41,6 +42,13 @@
       </div>  
     </div>
   </header>
-</body>
+  <div style="display: none;" id="modal">
+    <h2>Hello!</h2>
+    <p>You are awesome!</p>
+  </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
