@@ -25,6 +25,8 @@ body{
     line-height: 18px;
     color: #5e5e5e;
 }
+/* HEADER */
+
 .header{
     font-family: 'Roboto', sans-serif;
 }
@@ -103,3 +105,105 @@ body{
 .menu li + li{
     padding-left: 10px;
 }
+/*END OF HEADER */
+
+/* SLIDER */
+.slider{
+    position: relative;
+}
+.slick-arrow-btn{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.slick-prev {
+    left:0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-arrow-btn:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'icomoon';
+}
+.slick-arrow-btn:hover {
+    background-color: #ffc222;   
+}
+.slick-prev:after{
+    content: "\f104";
+}
+.slick-next:after{
+    content: "\f105";
+}
+
+.slider__item{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    text-align: center;
+}
+.slider__item-slide-1{
+    background-image: url('../img/slider-bg-1.jpg');
+}
+.slider__item-slide-2{
+    background-image: url('../img/slider-bg-2.jpg');
+}
+.slider__content{
+    max-width: 665px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+.slider__btns-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.slider__title{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+.slider__text{
+    font-size: 18px;
+    line-height: 24px;
+    color: #d3d2d2;
+    margin-bottom: 50px;
+}
+.default-btn{
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 30px 8px 24px;
+    border: 1px solid #ffc222;
+    border-right-width: 20px;
+    position: relative;
+    outline: none;
+}
+.default-btn:after{
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+}
+
+/*END OF SLIDER */
