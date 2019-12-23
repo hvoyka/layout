@@ -8,11 +8,10 @@ $(function(){
         //position for slider arrows, like they in container
         let sliderItemContainer =  $('.slick-active .container');
         let ofl = $(sliderItemContainer).offset().left;
-        console.log(sliderItemContainer, ofl);
         $('.slick-prev').css("left", ofl+15);
         $('.slick-next').css("right", ofl+15);
-        console.log('arrow pos');
     }
+    $('select').styler();
     
 
     window.addEventListener('resize', function(event){
