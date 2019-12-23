@@ -296,3 +296,33 @@ body{
 }
 
 /*SERVICE END */
+/* ABOUT */
+.about{
+    background-image: url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    padding: 15px 0px 45px;
+}
+.about__inner{
+    max-width: 550px;
+}
+.about__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.about__text{
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #d3d2d2;
+    margin-bottom: 40px;
+}
+.about__btn.default-btn:after{
+    color: #000;
+}
+/* ABOUT END */
