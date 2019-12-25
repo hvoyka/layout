@@ -695,3 +695,24 @@ width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 /* FOOTER END */
+/* MODAL */
+#modal {
+    width: 300px;
+}
+#modal input{
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding: 0px 10px;
+    outline: none;
+    font-weight: 400;
+}
+#modal input[type='submit']{
+    background-color: #ffc222;
+    cursor: pointer;
+    border: none;
+}
+/* MODAL END */
