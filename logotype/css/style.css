@@ -37,7 +37,7 @@ body{
 .header__top{
     background-color: #303030;
 }
-.header__btn{
+.header__btn, .footer__btn{
     position: relative;
     line-height: 36px;    
     color: #1b1b1b;
@@ -45,7 +45,8 @@ body{
     padding: 5px 20px 4px 50px;
     font-size: 16px;
 }
-.header__btn:before{
+.header__btn:before,
+.footer__btn:before{
     content: '\f0b1';
     font-family: 'icomoon';
     position: absolute;
@@ -62,7 +63,8 @@ body{
     padding-left: 20px;
     padding-right: 30px;
 }
-.header__phone:before{
+.header__phone:before,
+.footer__phone:before{
     content: '\f095';
     font-family: 'icomoon';
     position: absolute;
@@ -72,7 +74,8 @@ body{
 .header__email{
     padding-left: 24px;
 }
-.header__email:before{
+.header__email:before,
+.footer__email:before{
     content: '\f003';
     font-family: 'icomoon';
     position: absolute;
@@ -618,3 +621,77 @@ width: 100%;
     letter-spacing: 0.1px;
 }
 /* NEWS END */
+
+/* FOOTER */
+.footer__content{
+    background-color: #595959;
+    padding: 20px 0px 30px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info{
+    max-width: 360px;    
+}
+
+.footer__phone, .footer__email, .footer__adress{
+    position: relative;
+    padding-left: 30px;
+}
+.footer__adress:before{
+    content: "\f041";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+.foooter__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 36px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.footer__text{
+    color: #d3d2d2;
+    margin-bottom: 45px;
+}
+.footer__btn{
+    margin-bottom: 15px;
+}
+.footer__list li{
+    margin-top: 10px;
+}
+.footer__list li a{
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+}
+.footer__map{
+    padding-top: 30px;
+    max-width: 630px;
+    width: 100%;
+}
+.footer__map iframe{
+    height: 250px;
+    width: 100%;
+}
+.footer__copy{
+    background-color: #303030;
+    min-height: 40px;   
+}
+.footer__copy-text{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding: 8px 0px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+/* FOOTER END */
