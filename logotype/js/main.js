@@ -1,4 +1,9 @@
 $(function(){
+    //gamburger menu
+    $('.header__btn-menu').on('click', function(){
+        $('.menu ul').slideToggle();
+    });
+    //SLIDER TOP
     $('.slider__inner').slick({
         nextArrow: '<button type="button" class="slick-next slick-arrow-btn"></button>',
         prevArrow: '<button type="button" class="slick-prev slick-arrow-btn"></button>',
@@ -20,5 +25,7 @@ $(function(){
 
     window.addEventListener('resize', function(event){
         sliderArrowsPos();
-      });
+    });
+
+    
 });

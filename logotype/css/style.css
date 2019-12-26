@@ -33,6 +33,7 @@ body{
 .header__wrapper{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header__top{
     background-color: #303030;
@@ -73,6 +74,7 @@ body{
 }
 .header__email{
     padding-left: 24px;
+    padding-right: 30px;
 }
 .header__email:before,
 .footer__email:before{
@@ -107,6 +109,11 @@ body{
 }
 .menu li + li{
     padding-left: 10px;
+}
+.header__btn-menu{
+    display: none;
+    font-size: 28px;
+    line-height: 30px;
 }
 /*HEADER END */
 
