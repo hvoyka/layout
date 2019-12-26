@@ -7,7 +7,9 @@
         max-width: 80%;
         margin: 10px;
     }
-    
+    .form-inner{
+        background-image: none;
+    }
 }
 @media (max-width: 900px){
     .slider .slick-arrow-btn{
@@ -17,7 +19,18 @@
         margin: 0 auto;
         margin-top: 15px;
     }
-    
+    .form__box-inner{
+        display: block;
+    }
+    .form__box-left{
+        max-width: 100%;
+    }
+    .form__box-right{
+        max-width: 100%;
+    }
+    .jq-selectbox{
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 700px){
     .header__wrapper{

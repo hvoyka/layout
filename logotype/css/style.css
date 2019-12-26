@@ -253,6 +253,7 @@ body{
 .form__title,
 .news__title{
     font-size: 24px;
+    line-height: 24px;
     font-family: 'Roboto', sans-serif;
     color: #212020;
     font-weight: 500;
