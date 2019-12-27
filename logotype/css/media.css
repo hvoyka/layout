@@ -1,7 +1,12 @@
 @media (max-width: 1140px){
     .service__items{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .service__item{
         max-width: 80%;
@@ -46,20 +51,30 @@
         padding-bottom: 25px;
     }
     .advantages__inner{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .advantages__item{
         max-width: 100%;
         margin-bottom: 30px;
     }
     .footer__inner{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 @media (max-width: 700px){
     .header__wrapper{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .header__btn-menu{
         display: block;
@@ -84,6 +99,9 @@
         background-color: #ffc222;
         border-bottom: 1px solid #fff;
     }
+    .news{
+        padding: 35px 0px 50px;
+    }
     .news__blog {
         display: block;
         max-width: 100%;
@@ -93,8 +111,13 @@
 }
 @media (max-width: 450px){
     .header__wrapper-left{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }    
     .slider__title{
         font-size: 24px;
