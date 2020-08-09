@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   color: #2F3035;
   font-family: 'SFProDisplay-Regular', sans-serif;
@@ -162,7 +166,10 @@ body {
   position: relative;
   max-width: 870px;
 }
-
+.banner-section__slider-img{
+  object-fit: cover;
+  min-height: 400px;
+}
 .banner-section__slider-btn {
   display: flex;
   justify-content: center;
@@ -213,4 +220,113 @@ body {
   border: 1px solid #fff;
   border-radius: 50%;
   background-color: transparent;
+}
+
+.sale-item {
+  max-width: 265px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #CDCDCD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sale-item__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sale-item__info {
+  color: #fff;
+  background-color: #1C62CD;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.price {
+  font-family: 'Barlow', sans-serif;
+}
+
+.sale-item__price {
+  text-align: right;
+}
+
+.sale-item__price-new {
+  position: relative;
+  color: #1C62CD;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  margin-right: 6px;
+  padding-right: 20px;
+}
+
+.sale-item__price-new::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 15px;
+  height: 18px;
+  background-image: url('../images/svg/price-icon--blue.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sale-item__price-old {
+  position: relative;
+  display: inline-block;
+  padding: 2px 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+  margin-right: 20px;
+  background-image: url('../images/svg/old-price-line.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sale-item__price-old::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 6px;
+  width: 8px;
+  height: 10px;
+  background-image: url('../images/svg/price-icon--gray.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sale-item__img{
+  object-fit: contain;
+}
+.sale-item__title {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+
+.sale-item__footer {
+  background-color: #F0F0F4;
+  padding: 25px 20px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sale-item__footer span {
+  display: block;
+  color: #1C62CD;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
 }
