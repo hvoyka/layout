@@ -9,6 +9,7 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 ul, li {
@@ -166,10 +167,12 @@ body {
   position: relative;
   max-width: 870px;
 }
-.banner-section__slider-img{
+
+.banner-section__slider-img {
   object-fit: cover;
   min-height: 400px;
 }
+
 .banner-section__slider-btn {
   display: flex;
   justify-content: center;
@@ -306,9 +309,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sale-item__img{
+
+.sale-item__img {
   object-fit: contain;
 }
+
 .sale-item__title {
   font-family: 'SFProDisplay-Bold', sans-serif;
   font-weight: 700;
@@ -329,4 +334,52 @@ body {
   color: #1C62CD;
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
+}
+
+/* SEARCH */
+
+.search__tabs {
+  margin-bottom: 25px;
+}
+
+.search__tabs-item {
+  padding: 11px 26px 12px;
+}
+
+.search__tabs-item--active {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  border-radius: 5px;
+  background-color: #F0F0F4;
+  font-weight: 700;
+}
+
+.search__content-form {
+  display: flex;
+}
+
+.search__content-input {
+  border: none;
+  border-radius: 3px;
+  background: #F0F0F4;
+  padding: 17px 20px;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+}
+.search__content-input::placeholder {
+  color: #656464;
+}
+.search__content-btn {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1C62CD;
+  border-radius: 3px;
+  border: none;
+  padding: 17px 41px;
+  margin-left: -3px;
 }
