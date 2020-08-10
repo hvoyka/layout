@@ -39,11 +39,11 @@ body {
   margin: 0 auto;
 }
 
-/* HEADER */
-
-.header {
-  margin-bottom: 78px;
+.page-section {
+  margin-bottom: 80px;
 }
+
+/* HEADER */
 
 .header__top-inner {
   display: flex;
