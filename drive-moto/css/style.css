@@ -352,7 +352,12 @@ body {
   background-color: #F0F0F4;
   font-weight: 700;
 }
-
+.search__content-item{
+  display: none;
+}
+.search__content-item--active {
+  display: block;
+}
 .search__content-form {
   display: flex;
 }
