@@ -577,3 +577,29 @@ body {
   color: #2F3035;
   transition: color 0.3s;
 }
+
+/* not-available info in product item*/
+.product-item__not-available-box{
+  display: none;
+}
+.product-item--not-available .product-item__not-available-box{
+  display: block;
+}
+.product-item--not-available .product-item__price,
+.product-item--not-available .product-item__basket-btn{
+  display: none;
+}
+.product-item__not-available {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 13px;
+}
+
+.product-item__not-available-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C62CD;
+  text-decoration: underline;
+}
