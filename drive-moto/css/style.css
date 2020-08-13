@@ -464,8 +464,10 @@ body {
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   text-align: center;
-  padding: 52px 20px 31px;
+  padding: 50px 35px 25px;
   width: 271px;
+  min-height: 403px;
+  transition: all 0.3s;
 }
 
 .product-item--sale::before {
@@ -507,7 +509,7 @@ body {
 
 .product-item__title-box {
   font-weight: normal;
-  padding: 14px 0 25px;
+  padding: 10px 0;
 }
 
 .product-item__title {
@@ -576,6 +578,7 @@ body {
   line-height: 36px;
   color: #2F3035;
   transition: color 0.3s;
+  padding-top: 15px;
 }
 
 /* not-available info in product item*/
@@ -594,7 +597,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .product-item__not-available-link {
