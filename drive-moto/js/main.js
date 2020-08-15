@@ -8,7 +8,9 @@ $(function(){
   //PRODUCTS SLIDER
   $('.products-slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 2
+    slidesToScroll: 2,
+    prevArrow: '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="./images/svg/slider-arrow-left--black.svg" alt=""></button>',
+    nextArrow: '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="./images/svg/slider-arrow-right--black.svg" alt=""></button>',
   })  
   //TABS
   $('.tab').on('click', function(e){
