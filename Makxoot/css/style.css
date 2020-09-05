@@ -803,13 +803,26 @@ body {
 }
 
 .present__title {
+  position: relative;
   padding-top: 110px;
   font-size: 36px;
   line-height: 38px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-
+.present__title::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-image: url("../images/surprise-icon.png");
+  width: 65px;
+  height: 65px;
+}
 .present__text {
   font-size: 15px;
   line-height: 24px;
