@@ -248,7 +248,7 @@ body {
 /* RATINGS */
 
 .ratings__wrapper {
-  padding: 100px 0 100px;
+  padding: 100px 0 80px;
   color: #000000;
   text-align: center;
 }
@@ -365,8 +365,8 @@ body {
 
 .tariff-plans__name {
   color: #000;
-  font-size: 20px;
-  line-height: 21px;
+  font-size: 30px;
+  line-height: 30px;
   font-weight: 600;
   min-height: 70px;
   margin-top: 20px;
@@ -456,6 +456,7 @@ body {
   font-size: 36px;
   line-height: 38px;
   font-weight: bold;
+  letter-spacing: 0.20rem;
   margin-bottom: 90px;
   text-align: center;
 }
@@ -473,7 +474,7 @@ body {
   text-align: center;
   width: 33%;
   min-height: 280px;
-  padding: 100px 50px 70px;
+  padding: 110px 50px 70px;
 }
 
 .advantages__item-title {
@@ -531,7 +532,7 @@ body {
   padding: 100px 0;
   color: #000;
   background-repeat: no-repeat;
-  background-position: 0 0, 100% 56px;
+  background-position: 0 0, 100% 0;
   background-size: auto;
   background-image: url("../images/form-left.png"),
   url("../images/form-right.png");
@@ -541,6 +542,7 @@ body {
   font-size: 36px;
   line-height: 38px;
   font-weight: bold;
+  letter-spacing: 0.15rem;
   margin-bottom: 55px;
   text-align: center;
 }
@@ -787,10 +789,11 @@ body {
 
 .present__title {
   position: relative;
-  padding-top: 110px;
+  padding-top: 100px;
   font-size: 36px;
   line-height: 38px;
   font-weight: bold;
+  letter-spacing: 0.15rem;
   margin-bottom: 30px;
 }
 .present__title::before{
@@ -809,9 +812,13 @@ body {
 .present__text {
   font-size: 15px;
   line-height: 24px;
+  max-width: 610px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
-
+.present-btn{
+  padding: 15px 55px;
+}
 .footer {
   padding: 80px 0;
   background-color: rgb(0, 173, 239);
@@ -885,7 +892,6 @@ body {
 .footer__menu-list-link {
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 20px;
 }
 
 .footer__menu-list-link:hover {
