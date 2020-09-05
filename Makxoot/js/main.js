@@ -1,5 +1,19 @@
 window.onload = function () {
+  /* BURGER */
 
+  const headerBurg = document.getElementById('headerBurg');
+  const headerBurgClose = document.getElementById('headerBurgClose');
+  const headerNav = document.getElementById('headerNav');
+  const body = document.querySelector('body');
+
+  headerBurg.addEventListener('click', function() {   
+      headerNav.classList.add('header__nav--active');
+      body.classList.add('body-no-scroll');
+  })
+  headerBurgClose.addEventListener('click', function() {   
+    headerNav.classList.remove('header__nav--active');
+    body.classList.remove('body-no-scroll');
+})
   /* TOP MAIN SLIDER */
   var mainSlider = new Swiper('.main-slider__wrapper', {
     loop: true,
