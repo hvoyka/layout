@@ -176,6 +176,8 @@ body {
 .banner-section__slider {
   position: relative;
   max-width: 870px;
+  width:100%;
+  height: auto;
 }
 
 .banner-section__slider-img {
