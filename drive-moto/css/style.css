@@ -688,3 +688,8 @@ body {
   text-transform: uppercase;
   padding: 16px 43px;
 }
+
+/* BANNER */
+.banner{
+  margin-bottom: 80px;
+}
