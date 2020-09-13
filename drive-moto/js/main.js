@@ -25,4 +25,14 @@ $(function(){
   $('.product-item__favor-btn').on('click', function() {
     $(this).toggleClass('product-item__favor-btn--active');
   });
+  //form styler
+  $('.filter-style').styler();
+
+  $('.filter__item-drop').click(function(){
+    $(this).toggleClass('filter__item-drop--active');
+    $(this).siblings('.aside-filter__content').slideToggle('fast');
+  });
+  $('#catalogFilterForm').submit(function(e){
+    e.preventDefault();
+  });
 });

@@ -90,19 +90,19 @@
         <h1 class="catalog__title">Гидроциклы</h1>
         <div class="catalog__filter">
           <ul class="catalog__filter-tags">
-            <li ><a class="catalog__filter-tags-item-link" href="#">Полноприводные</a></li>
-            <li ><a class="catalog__filter-tags-item-link" href="#">от 5000</a></li>
-            <li ><a class="catalog__filter-tags-item-link" href="#">BRP</a></li>
-            <li ><a class="catalog__filter-tags-item-link" href="#">еще</a></li>
+            <li><a class="catalog__filter-tags-item-link" href="#">Полноприводные</a></li>
+            <li><a class="catalog__filter-tags-item-link" href="#">от 5000</a></li>
+            <li><a class="catalog__filter-tags-item-link" href="#">BRP</a></li>
+            <li><a class="catalog__filter-tags-item-link" href="#">еще</a></li>
           </ul>
           <div class="catalog__filter-sort">
-            <select>
+            <select class="filter-style">
               <option value="">По полулярности</option>
               <option value="">По возрастанию</option>
               <option value="">По убыванию</option>
             </select>
-            <button class="catalog__filter-btn catalog__filter-btn--active"><svg width="23"
-                height="23" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="catalog__filter-btn catalog__filter-btn--active"><svg width="23" height="23"
+                viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
                 <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
                 <rect x="7" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
@@ -110,8 +110,8 @@
                 <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
               </svg>
             </button>
-            <button class="catalog__filter-btn"><svg width="23" height="23"
-                viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="catalog__filter-btn"><svg width="23" height="23" viewBox="0 0 25 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
                 <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035" />
                 <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035" />
@@ -127,11 +127,33 @@
           <aside class="catalog__aside aside-filter">
             <div class="tabs-wrapper">
               <div class="tabs aside-filter__tabs">
-                <a href="#filter-tab-1" class="tab aside-filter__tab tab--active"><span>Параметры</span>  </a>
+                <a href="#filter-tab-1" class="tab aside-filter__tab tab--active"><span>Параметры</span> </a>
                 <a href="#filter-tab-2" class="tab aside-filter__tab"><span>по марке</span></a>
               </div>
               <div class="tabs-container">
                 <div id="filter-tab-1" class="tabs-content aside-filter__tabs-content tabs-content--active">
+
+                  <form id="catalogFilterForm" class="aside-filter__form">
+                    <ul class="aside-filter__list">
+                      <li class="aside-filter__item-drop">
+                        <button class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</button>
+                        <div class="aside-filter__content">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              В наличие</label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              Под заказ</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop"></li>
+                      <li class="aside-filter__item-"></li>
+                    </ul>
+                  </form>
 
                 </div>
                 <div id="filter-tab-2" class="tabs-content aside-filter__tabs-content ">
