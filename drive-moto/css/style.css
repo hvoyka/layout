@@ -1035,10 +1035,40 @@ img {
   cursor: pointer;
 }
 
-.jq-checkbox {
-  margin-right: 12px;
-}
-
 .aside-filter__content-box {
   width: 50%;
+}
+
+.jq-checkbox, .jq-radio {
+  width: 14px;
+  height: 14px;
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid #c4c4c4;
+  border-radius: 1px;
+  margin: 0px 8px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jq-checkbox.checked, .jq-radio.checked {
+  background: #1C62CD;
+  border: 1px solid transparent;
+}
+
+.jq-checkbox.focused, .jq-radio.focused {
+  border: 1px solid black;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  margin: 0;
+  width: 8px;
+  height: 6px;
+  border: none;
+  transform: rotate(0deg);
+  background-image: url(../images/svg/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
