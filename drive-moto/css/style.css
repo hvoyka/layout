@@ -1025,6 +1025,7 @@ img {
 .aside-filter__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .aside-filter__content-label {
@@ -1038,7 +1039,9 @@ img {
 .aside-filter__content-box {
   width: 50%;
 }
-
+.aside-filter__content--radio .aside-filter__content-box{
+  width: 33%;
+}
 .jq-checkbox, .jq-radio {
   width: 14px;
   height: 14px;
@@ -1051,7 +1054,9 @@ img {
   justify-content: center;
   align-items: center;
 }
-
+.jq-radio{
+  border-radius: 50%;
+}
 .jq-checkbox.checked, .jq-radio.checked {
   background: #1C62CD;
   border: 1px solid transparent;
@@ -1071,4 +1076,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.jq-radio.checked .jq-radio__div{
+  background: none;
+  box-shadow: none;
 }
