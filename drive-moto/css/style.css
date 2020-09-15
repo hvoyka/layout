@@ -1000,7 +1000,6 @@ img {
 }
 
 .filter__item-drop {
-  margin-bottom: 20px;
   position: relative;
   cursor: pointer;
   border: none;
@@ -1026,6 +1025,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .aside-filter__content-label {
@@ -1039,9 +1039,11 @@ img {
 .aside-filter__content-box {
   width: 50%;
 }
-.aside-filter__content--radio .aside-filter__content-box{
+
+.aside-filter__content--radio .aside-filter__content-box {
   width: 33%;
 }
+
 .jq-checkbox, .jq-radio {
   width: 14px;
   height: 14px;
@@ -1054,9 +1056,11 @@ img {
   justify-content: center;
   align-items: center;
 }
-.jq-radio{
+
+.jq-radio {
   border-radius: 50%;
 }
+
 .jq-checkbox.checked, .jq-radio.checked {
   background: #1C62CD;
   border: 1px solid transparent;
@@ -1077,7 +1081,59 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.jq-radio.checked .jq-radio__div{
+
+.jq-radio.checked .jq-radio__div {
   background: none;
   box-shadow: none;
+}
+
+.aside-filter__content--range {
+  display: block;
+}
+.irs{
+  margin-top: -15px;
+}
+.irs--round .irs-handle {
+  background-color: #1C62CD;
+  border: none;
+  box-shadow: none;
+  height: 10px;
+  width: 10px;
+  top: 31px;
+  cursor: pointer;
+}
+.irs--round .irs-bar{
+  top:34px;
+}
+.irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
+  background-color: #c4c4c4;
+}
+
+.irs--round .irs-min, .irs--round .irs-max {
+  top: 60px;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Barlow', sans-serif;
+  padding-left: 26px;
+  visibility: visible;
+
+}
+.irs--round .irs-line{
+  height: 1px;
+}
+.irs-min::before,.irs-max::before{
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+} 
+.irs-min::before {
+  content: "от ";
+}
+
+.irs-max::before {
+  content: "до ";
 }

@@ -35,4 +35,14 @@ $(function(){
   $('#catalogFilterForm').submit(function(e){
     e.preventDefault();
   });
+
+  /* range input */  
+  $(".js-range-slider").ionRangeSlider({
+    skin: "round",
+    type: 'double',
+    hide_from_to: true,
+    grid: false,
+
+  });
+    
 });
