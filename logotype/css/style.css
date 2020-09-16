@@ -31,6 +31,9 @@ body{
 .header{
     font-family: 'Roboto', sans-serif;
 }
+.header__logo{
+    max-width: 200px;
+}
 .header__wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -49,8 +52,10 @@ body{
     line-height: 36px;    
     color: #1b1b1b;
     background-color: #ffc222;
+    border: 1px solid transparent;
     padding: 5px 20px 4px 50px;
     font-size: 16px;
+    transition: all 0.2s;
 }
 .header__btn:before,
 .footer__btn:before{
@@ -59,12 +64,20 @@ body{
     position: absolute;
     left: 22px;
     color: #1b1b1b;
+    transition: all 0.2s;
+}
+.header__btn:hover, .footer__btn:hover{  
+    color: #f9f9f9;
+}
+.header__btn:hover::before, .footer__btn:hover::before{  
+    color: #f9f9f9;
 }
 .header__email, .header__phone{
     color: #cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
     position: relative;
+    transition: all 0.2s;
 }
 .header__phone{
     padding-left: 20px;
@@ -77,7 +90,9 @@ body{
     position: absolute;
     left: 0;
     color: #ffc222;
+    transition: all 0.2s;
 }
+
 .header__email{
     padding-left: 24px;
     padding-right: 30px;
@@ -90,6 +105,12 @@ body{
     left: 0;
     color: #ffc222;
 }
+.header__phone:hover, .header__email:hover{
+    color: #fff;
+ }
+ .header__phone:hover::before, .header__email:hover::before{
+    transform: scale(1.1);
+ }
 .header__content{
     padding: 34px 0px 23px;
 }
@@ -145,6 +166,7 @@ body{
     background-color: transparent;
     cursor: pointer;
     outline: none;
+    transition: all 0.2s;
 }
 .slick-prev {
     left:0;
@@ -226,6 +248,7 @@ body{
     border-right-width: 20px;
     position: relative;
     outline: none;
+    transition: all 0.2s;
 }
 .default-btn:after{
     content: "\f105";
@@ -236,8 +259,20 @@ body{
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     right: -12px;
+    transition: all 0.2s;
 }
-
+.service__btn--card:hover{
+    color: #fff;
+    background-color: #ffc222;
+}
+.slider__btn:hover, .about__btn:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    border-right-width: 20px;
+}
+.slider__btn:hover::after, .about__btn:hover::after{
+    color: #000;
+}
 /* SLIDER END */
 
 /*SERVICE */
@@ -296,6 +331,16 @@ body{
 .news__btn{
     font-family: 'Roboto', sans-serif;
     border: 3px solid #e6e6e6;
+    padding: 5px 38px;
+    color: #373636;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    transition: all 0.2s;
+}
+.service__btn:hover,
+.news__btn:hover{ 
+    border: 3px solid #c0bfbf;
+    background-color:  #e6e6e6;
     padding: 5px 38px;
     color: #373636;
     line-height: 24px;
@@ -524,6 +569,9 @@ width: 100%;
 .form__box-inner .jq-selectbox li.option {
 	padding-left: 25px;
 }
+.form-btn:hover{
+    background-color: #ffc222;
+}
 /* FORM END */
 
 /* ADVANTAGES */
@@ -711,6 +759,7 @@ width: 100%;
 .footer__phone, .footer__email, .footer__adress{
     position: relative;
     padding-left: 30px;
+    transition: all 0.2s;
 }
 .footer__adress:before{
     content: "\f041";
@@ -718,6 +767,9 @@ width: 100%;
     position: absolute;
     left: 0;
     color: #ffc222;
+}
+.footer__phone:hover, .footer__email:hover, .footer__adress:hover{
+   text-decoration: underline;
 }
 .foooter__title{
     font-family: 'Roboto', sans-serif;
@@ -787,5 +839,11 @@ width: 100%;
     background-color: #ffc222;
     cursor: pointer;
     border: none;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+#modal input[type='submit']:hover{
+    border: 1px solid#ffc222;
+    background-color: #fff;
 }
 /* MODAL END */
