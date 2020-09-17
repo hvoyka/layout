@@ -988,7 +988,7 @@ img {
 }
 
 .aside-filter__item-drop {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .aside-filter__item-title {
@@ -1038,6 +1038,7 @@ img {
 
 .aside-filter__content-box {
   width: 50%;
+  margin-bottom: 10px;
 }
 
 .aside-filter__content--radio .aside-filter__content-box {
@@ -1173,7 +1174,7 @@ img {
   padding-left: 26px;
 }
 
-.filter__item-list-select .jq-selectbox__select{
+.filter__item-list-select .jq-selectbox__select {
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
   line-height: 17px;
@@ -1185,10 +1186,12 @@ img {
   box-shadow: none;
   text-shadow: none;
 }
-.filter__item-list-select .jq-selectbox__trigger{ 
+
+.filter__item-list-select .jq-selectbox__trigger {
   border: none;
 }
-.filter__item-list-select .jq-selectbox__trigger-arrow{
+
+.filter__item-list-select .jq-selectbox__trigger-arrow {
   width: 12px;
   height: 8px;
   top: 5px;
@@ -1200,22 +1203,57 @@ img {
   background-size: cover;
   transition: all 0.2s;
 }
-.filter__item-list-select.opened .jq-selectbox__trigger-arrow{
+
+.filter__item-list-select.opened .jq-selectbox__trigger-arrow {
   transform: rotate(180deg);
 }
-.filter__item-list-select .jq-selectbox__dropdown{
+
+.filter__item-list-select .jq-selectbox__dropdown {
   border-radius: 0;
   padding-top: 15px;
 }
+
 .filter__item-list-select.jq-selectbox.focused .jq-selectbox__select {
-	border: 1px solid #c4c4c4;
+  border: 1px solid #c4c4c4;
 }
 
 .filter__item-list-select.jq-selectbox li:hover {
-  background: rgba(107, 126, 172, 0.05);  
+  background: rgba(107, 126, 172, 0.05);
   color: rgba(0, 0, 0, 0.6);
 }
+
 .filter__item-list-select.jq-selectbox li.selected {
-  background: rgba(107, 126, 172, 0.05);  
+  background: rgba(107, 126, 172, 0.05);
   color: rgba(0, 0, 0, 0.6);
+}
+
+.fiter-more {
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.filter-more__btn {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #1C62CD;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1C62CD;
+  cursor: pointer;
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+.filter__model-search {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid #E0E0E0;
+  padding: 7px 20px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.filter__model-search::placeholder {
+  color: #BDBEC2;
 }
