@@ -28,12 +28,14 @@ $(function(){
   //form styler
   $('.filter-style').styler();
 
-  $('.filter__item-drop').click(function(){
+  $('.filter__item-drop').click(function(e){
+    e.preventDefault();
     $(this).toggleClass('filter__item-drop--active');
     $(this).siblings('.aside-filter__content').slideToggle('fast');
   });
+
   $('#catalogFilterForm').submit(function(e){
-    e.preventDefault();
+    //e.preventDefault();
   });
 
   /* range input */  
