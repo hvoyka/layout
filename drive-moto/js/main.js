@@ -28,7 +28,7 @@ $(function(){
   //form styler
   $('.filter-style').styler();
 
-  $('.filter__item-drop').click(function(e){
+  $('.filter__item-drop, .filter__extra').click(function(e){
     e.preventDefault();
     $(this).toggleClass('filter__item-drop--active');
     $(this).siblings('.aside-filter__content').slideToggle('fast');

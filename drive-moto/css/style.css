@@ -1287,10 +1287,68 @@ img {
   line-height: 14px;
   letter-spacing: 0.07em;
   color: #C4C4C4;
-
 }
 
-.btn-checked .filter-style.checked + .btn-checked__text {
+.btn-checked .filter-style.checked+.btn-checked__text {
   background-color: #1C62CD;
   color: #FFFFFF;
+}
+
+.aside-filter__item-drop--btns{
+  text-align: center;
+}
+
+.filter-btn__send {
+  background: #F0F0F4;
+  border: none;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #BDBEC2;
+  cursor: pointer;
+  padding: 17px 85px;
+  margin-bottom: 15px;
+}
+.filter-btn__send--active{
+  color: #fff;
+  background-color: #1C62CD;
+}
+.filter__extra {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.filter__extra-content--hide {
+  display: none;
+  margin-bottom: 15px;
+}
+.filter__extra::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 11%;
+  width: 12px;
+  height: 8px;
+  background-image: url(../images/svg/arrow_drop--down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s;
+}
+.filter__item-drop--active.filter__extra::after {
+  transform: rotate(180deg);
+}
+.filter-btn__reset {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C4C4C4;
+  border-bottom:1px solid #C4C4C4;
+  padding: 0;
+  padding-bottom: 1px;
 }
