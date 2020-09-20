@@ -37,10 +37,18 @@ $(function(){
   $('#catalogFilterForm').submit(function(e){
     //e.preventDefault();
   });
-  $('.catalog__filter-btn').click(function(e){
-    e.preventDefault();
+
+  /* change product item view (grid or line) */
+  $('.catalog__filter-btn--grid').click(function(e){
     $('.catalog__filter-btn').removeClass('catalog__filter-btn--active');
     $(this).addClass('catalog__filter-btn--active');
+    $('.catalog__product-list').removeClass('catalog__product-list--list');    
+  });
+
+  $('.catalog__filter-btn--line').click(function(e){
+    $('.catalog__filter-btn').removeClass('catalog__filter-btn--active');
+    $(this).addClass('catalog__filter-btn--active');
+    $('.catalog__product-list').addClass('catalog__product-list--list');
   });
   /* range input */  
   $(".js-range-slider").ionRangeSlider({
