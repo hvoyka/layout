@@ -896,6 +896,49 @@ img {
   display: flex;
 }
 
+.catalog__filter-select .jq-selectbox__select {
+  height: auto;
+  min-width: 180px;
+  padding: 8px 44px 8px 20px;
+  border: 1.5px solid #D7D9DF;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
+}
+.catalog__filter-select .jq-selectbox__dropdown {
+  border-radius: 0;
+}
+.catalog__filter-select.jq-selectbox li.selected {
+  background: rgba(107, 126, 172, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+}
+.catalog__filter-select.jq-selectbox li:hover {
+  background: rgba(107, 126, 172, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+}
+.catalog__filter-select .jq-selectbox__trigger {
+  border: none;
+}
+
+.catalog__filter-select .jq-selectbox__trigger-arrow {
+  width: 12px;
+  height: 8px;
+  top: 14px;
+  right: 9px;
+  border: none;
+  background-image: url(../images/svg/arrow_drop--down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s;
+}
+.catalog__filter-select.opened .jq-selectbox__trigger-arrow {
+  transform: rotate(180deg);
+}
 .catalog__filter-btn {
   opacity: 0.7;
   background-color: transparent;
@@ -1294,7 +1337,7 @@ img {
   color: #FFFFFF;
 }
 
-.aside-filter__item-drop--btns{
+.aside-filter__item-drop--btns {
   text-align: center;
 }
 
@@ -1310,10 +1353,12 @@ img {
   padding: 17px 85px;
   margin-bottom: 15px;
 }
-.filter-btn__send--active{
+
+.filter-btn__send--active {
   color: #fff;
   background-color: #1C62CD;
 }
+
 .filter__extra {
   position: relative;
   margin-bottom: 15px;
@@ -1321,10 +1366,12 @@ img {
   line-height: 16px;
   cursor: pointer;
 }
+
 .filter__extra-content--hide {
   display: none;
   margin-bottom: 15px;
 }
+
 .filter__extra::after {
   content: "";
   position: absolute;
@@ -1338,9 +1385,11 @@ img {
   background-size: cover;
   transition: all 0.2s;
 }
+
 .filter__item-drop--active.filter__extra::after {
   transform: rotate(180deg);
 }
+
 .filter-btn__reset {
   border: none;
   background: none;
@@ -1348,7 +1397,7 @@ img {
   font-size: 13px;
   line-height: 16px;
   color: #C4C4C4;
-  border-bottom:1px solid #C4C4C4;
+  border-bottom: 1px solid #C4C4C4;
   padding: 0;
   padding-bottom: 1px;
 }

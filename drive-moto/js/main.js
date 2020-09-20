@@ -37,7 +37,11 @@ $(function(){
   $('#catalogFilterForm').submit(function(e){
     //e.preventDefault();
   });
-
+  $('.catalog__filter-btn').click(function(e){
+    e.preventDefault();
+    $('.catalog__filter-btn').removeClass('catalog__filter-btn--active');
+    $(this).addClass('catalog__filter-btn--active');
+  });
   /* range input */  
   $(".js-range-slider").ionRangeSlider({
     skin: "round",
