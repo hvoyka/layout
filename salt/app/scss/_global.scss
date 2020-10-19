@@ -1,0 +1,30 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font-family: $ff-primary;
+  font-weight: 400;
+  font-size: 16px;  
+  background-color: $bg-color;
+  color: $text-color;
+  text-transform: uppercase;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: $text-color;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+}
