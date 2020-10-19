@@ -3,13 +3,97 @@
 @import "_fonts";
 @import "_global";
 
+
+
 /* HEADER */
 
 
 
+/* NUMBERS */
+.numbers{
+  &__wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item{
+    max-width: 285px;
+  text-align: center;
+  font-weight: bold;
+  }
+  &__big-num{
+    font-size: 60px;
+    color: $primary-color;
+    line-height: 62px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 18px;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+}
 
 
-
+/* WHAT WE DO */
+.what{
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__title{
+    position: relative;
+    font-size: 60px;
+    color: $primary-color;
+    line-height: 62px;
+    text-align: right;
+    padding: 33px 40px;
+    &::before{
+      content: "";
+      width: 46px;
+      height: 12px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $secondary-color;
+    }
+    &::after{
+      content: "";
+      width: 12px;
+      height: 46px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $secondary-color;
+    }
+  }
+  &__item{
+    max-width: 325px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    &-title{
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 20px;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+    &-text{
+      margin: 0;
+    }
+  }
+  &__img-box{
+    max-height: 145px;
+  }
+}
 
 //MEDIA
 @import "_media";
