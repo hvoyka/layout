@@ -31,7 +31,29 @@ $(function () {
   });
 
   /* burger */
-  $('.header__burg').on('click',function(){
+  $('.header__burg').on('click', function () {
     $('.js-nav-list').slideToggle();
   })
+
+  /* to top btn */
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 500) {
+      $('.js-to-top').fadeIn();
+    } else {
+      $('.js-to-top').fadeOut();
+    }
+  });
+  $(".js-to-top").on('click', function () {
+    $('html, body').animate({
+      scrollTop: $(".header").offset().top
+    }, 2000);
+  });
+
+  /* findout btn */
+
+  $(".js-findout-btn").on('click', function () {
+    $('html, body').animate({
+      scrollTop: $(".what__title").offset().top
+    }, 2000);
+  });
 });
