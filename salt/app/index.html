@@ -12,13 +12,14 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header_wrapper">
+      <div class="header__wrapper">
         <a class="header__logo" href="/">
-          <img src="./img/logo.png" alt="salt logo-image">
+          <img src="./img/logo.png" alt="salt logo-image" width="78" height="100">
         </a>
-        <nav>
-          <ul class="header__nav-list nav-list">
-            <li><a class="nav-list__item" href="">Home</a></li>
+        <nav class="header__nav">
+          <button class="header__burg"></button>
+          <ul class="header__nav-list nav-list js-nav-list">
+            <li><a class="nav-list__item nav-list__item--active" href="">Home</a></li>
             <li><a class="nav-list__item" href="">Products</a></li>
             <li><a class="nav-list__item" href="">Services</a></li>
             <li><a class="nav-list__item" href="">Resources</a></li>
@@ -34,28 +35,58 @@
       <div class="container">
         <div class="main-slider__box">
           <div class="main-slider__item">
-            <h2>Device Authentication</h2>
-            <p>SALT Group is a world leader in authentication and security. We have a range of services to improve user
-              authentication. Discover the possibilities with SALT.</p>
-            <button class="main-slider__btn btn">Get Started</button>
-            <img src="./img/tweet-icon.svg" alt="tweeter logo img">
+            <div class="main-slider__item-wrapper">
+              <div class="main-slider__item-info">
+                <h2 class="main-slider__item-title">Device Authentication</h2>
+                <p class="main-slider__item-text">SALT Group is a world leader in authentication and security. We have a
+                  range of services to improve user
+                  authentication. Discover the possibilities with SALT.</p>
+                <button class="main-slider__btn btn">Get Started</button>
+              </div>
+              <div class="main-slider__item-img-box">
+                <img src="./img/tweet-icon.svg" alt="tweeter logo img">
+              </div>
+
+            </div>
           </div>
-          <div>
-            <h2>Device Authentication</h2>
-            <p>SALT Group is a world leader in authentication and security. We have a range of services to improve user
-              authentication. Discover the possibilities with SALT.</p>
-            <button class="main-slider__btn btn">Get Started</button>
-            <img src="./img/tweet-icon.svg" alt="tweeter logo img">
+
+          <div class="main-slider__item">
+            <div class="main-slider__item-wrapper">
+              <div class="main-slider__item-info">
+                <h2 class="main-slider__item-title">Second slide</h2>
+                <p class="main-slider__item-text">SALT Group is a world leader in authentication and security. We have a
+                  range of services to improve user
+                  authentication. Discover the possibilities with SALT.</p>
+                <button class="main-slider__btn btn">Get Started</button>
+              </div>
+              <div class="main-slider__item-img-box">
+                <img src="./img/tweet-icon.svg" alt="tweeter logo img">
+              </div>
+
+            </div>
+
           </div>
-          <div>
-            <h2>Device Authentication</h2>
-            <p>SALT Group is a world leader in authentication and security. We have a range of services to improve user
-              authentication. Discover the possibilities with SALT.</p>
-            <button class="main-slider__btn btn">Get Started</button>
-            <img src="./img/tweet-icon.svg" alt="tweeter logo img">
+          <div class="main-slider__item">
+            <div class="main-slider__item-wrapper">
+              <div class="main-slider__item-info">
+                <h2 class="main-slider__item-title">Third slide</h2>
+                <p class="main-slider__item-text">SALT Group is a world leader in authentication and security. We have a
+                  range of services to improve user
+                  authentication. Discover the possibilities with SALT.</p>
+                <button class="main-slider__btn btn">Get Started</button>
+              </div>
+              <div class="main-slider__item-img-box">
+                <img src="./img/tweet-icon.svg" alt="tweeter logo img">
+              </div>
+            </div>
+
           </div>
         </div>
-        <button>Find out more</button>
+        <div class="main-slider__findout">
+          <span>Find out more</span>
+          <button class="main-slider__findout-btn"></button>
+        </div>
+        
       </div>
     </section>
     <div class="numbers">
@@ -106,7 +137,9 @@
             </div>
             <h3 class="what__item-title">Transaction Authentication</h3>
             <p class="what__item-text">
-              High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle and browser malware.
+              High assurance out-of-band authentication of high impact transactions and instructions initiated through
+              electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection
+              against man-in-the-middle and browser malware.
             </p>
           </div>
           <div class="what__item">
@@ -115,7 +148,11 @@
             </div>
             <h3 class="what__item-title">Contemporary authentication methods</h3>
             <p class="what__item-text">
-              Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.
+              Echidna authentication server to enable adaptive risk-based approach to security through a range of
+              methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more
+              contemporary QR code signing and advanced connected mobile security tokens capable of transaction
+              signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other
+              biometrics.
             </p>
           </div>
           <div class="what__item">
@@ -124,7 +161,8 @@
             </div>
             <h3 class="what__item-title">HSM Solutions</h3>
             <p class="what__item-text">
-              Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. 
+              Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key
+              ceremony procedures, and SEE code development.
             </p>
           </div>
           <div class="what__item">
@@ -133,7 +171,8 @@
             </div>
             <h3 class="what__item-title">Cloud & IoT Security</h3>
             <p class="what__item-text">
-              Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.
+              Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support
+              cloud adoption and migration of applications and data into private and public clouds.
             </p>
           </div>
         </div>
@@ -141,7 +180,7 @@
 
     </section>
     <section class="spotlight">
-      <div class="container">
+      <div class="spotlight__wrapper">
         <div class="spotlight__info">
           <h2 class="spotlight__title">Product Spotlight</h2>
           <p class="spotlight__text">
@@ -151,18 +190,18 @@
           <button class="spotlight__btn btn">MORE INFO</button>
         </div>
         <div class="spotlight__video-wrapper">
-          <div class="spotlight__video-preview">
-            <img src="./img/video-preview.jpg" alt="video preview img">
-          </div>
+          <img src="./img/video-preview.jpg" alt="video preview img">
         </div>
       </div>
     </section>
     <section class="contact-us">
       <div class="container">
-        <h2 class="contact-us__title">
-          Ready to get started?
-        </h2>
-        <button class="contact-us__btn btn">CONTACT US</button>
+        <div class="contact-us__wrapper">
+          <h2 class="contact-us__title">
+            Ready to get started?
+          </h2>
+          <button class="contact-us__btn btn">CONTACT US</button>
+        </div>
       </div>
     </section>
 
@@ -173,9 +212,11 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__tweet-box">
-          <a class="twitter-timeline" data-lang="en" data-width="295" data-height="300" data-theme="light" href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">Tweets by saltgroup</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          <a class="twitter-timeline" data-lang="en" data-width="295" data-height="300" data-theme="light"
+            href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">Tweets by saltgroup</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-        <div class="foooter__links-box">
+        <div class="footer__links-box">
           <ul class="footer__links">
             <li class="footer__links-title">Navigation</li>
             <li><a class="footer__links-link" href="#">Home</a></li>
@@ -195,14 +236,16 @@
           <ul class="footer__links">
             <li class="footer__links-title">Contact sales</li>
             <li>PHONE: <a class="footer__links-link" href="tel:61396144416">+61 3 9614 4416</a></li>
-            <li>EMAIL: <a class="footer__links-link" href="mailto:sales@saltgroup.com.au">sales@saltgroup.com.au</a></li>            
+            <li>EMAIL: <a class="footer__links-link footer__links-link--email" href="mailto:sales@saltgroup.com.au">sales@saltgroup.com.au</a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="footer__bottom">
-        © 2017 SALT GROUP  <span></span>    ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.
-      </div>
     </div>
+    <div class="footer__bottom">
+      © 2017 SALT GROUP <span></span> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.
+    </div>
+
     <button class="to-top">
       <img src="./img/to-top.svg" alt="to-top-button img">
     </button>
