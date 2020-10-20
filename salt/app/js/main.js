@@ -37,7 +37,7 @@ $(function () {
 
   /* to top btn */
   $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > 500 && $( window ).width() > 740) {
       $('.js-to-top').fadeIn();
     } else {
       $('.js-to-top').fadeOut();
